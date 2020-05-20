@@ -28,7 +28,7 @@ module.exports = {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader', {loader: 'postcss-loader?url=false', options: {plugins: postCSSPlugins}}]
+        use: ['style-loader', 'css-loader?url=false', {loader: 'postcss-loader?url=false', options: {plugins: postCSSPlugins}}]
       }
     ]
   }
